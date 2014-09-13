@@ -1,59 +1,14 @@
-o = instance_position( x-128, y, o_tile );
-
-if(o!= noone)
+for(i=-128;i<=128;i+=128)
   {
-    o.ACTIVE = true;
-  }  
-  
-o = instance_position( x+128, y, o_tile );
+  for(j=-128;j<=128;j+=128)
+    {
+    o = instance_position( x+i, y+j, o_tile );
+    
+    if(o!= noone)
+      {
+        o.ACTIVE = true;
+      }     
+    }
+  }
 
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  }  
-  
-o = instance_position( x, y-128, o_tile );
 
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-o = instance_position( x, y+128, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-  
-o = instance_position( x-128, y-128, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-o = instance_position( x+128, y-128, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-  
-o = instance_position( x-128, y+128, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-o = instance_position( x+128, y+128, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
-
-o = instance_position( x, y, o_tile );
-
-if(o!= noone)
-  {
-    o.ACTIVE = true;
-  } 
